@@ -1,20 +1,18 @@
-class Student:
-    def __init__(self, name, age, height, number):
-        self.age = age
-        self.height = height
-        self.number = number
-        self.name = name
+class GermanShepherd:
 
-    def grow(self, height = 1):
-        self.height += height
+    def __init__(self, name, age, size):
+        self.name = name  # Ім'я собаки
+        self.age = age  # Вік у роках
+        self.size = size  # Розмір (наприклад: "великий", "середній")
+
+    def show_info(self):
+        print(f"Собака: {self.name}")
+        print(f"Вік: {self.age} років")
+        print(f"Розмір: {self.size}")
 
 
-anton = Student(name="Anton", age=12, height=166, number=38054345345)
+# Створюємо новий об'єкт вівчарки
+dog1 = GermanShepherd(name="швайне", age=3, size="великий")
 
-print("Name - ", anton.name)
-print("Age - ", anton.age)
-print("Height - ", anton.height)
-print("Phone number - ", anton.number)
-
-anton.grow(height=5)
-print(anton.height)
+# Виводимо інформацію про собаку
+dog1.show_info()
